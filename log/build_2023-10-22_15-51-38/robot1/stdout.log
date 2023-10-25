@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/robot1/robot1.egg-info
+writing ../../build/robot1/robot1.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot1/robot1.egg-info/dependency_links.txt
+writing entry points to ../../build/robot1/robot1.egg-info/entry_points.txt
+writing requirements to ../../build/robot1/robot1.egg-info/requires.txt
+writing top-level names to ../../build/robot1/robot1.egg-info/top_level.txt
+writing manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dualipa/ros2_ws/build/robot1/build
+creating /home/dualipa/ros2_ws/build/robot1/build/lib
+creating /home/dualipa/ros2_ws/build/robot1/build/lib/robot1
+copying robot1/robot1_node.py -> /home/dualipa/ros2_ws/build/robot1/build/lib/robot1
+copying robot1/__init__.py -> /home/dualipa/ros2_ws/build/robot1/build/lib/robot1
+running install
+running install_lib
+creating /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1
+copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/robot1_node.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1
+copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/__init__.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1
+byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/robot1_node.py to robot1_node.cpython-310.pyc
+byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/dualipa/ros2_ws/install/robot1/share/ament_index
+creating /home/dualipa/ros2_ws/install/robot1/share/ament_index/resource_index
+creating /home/dualipa/ros2_ws/install/robot1/share/ament_index/resource_index/packages
+copying resource/robot1 -> /home/dualipa/ros2_ws/install/robot1/share/ament_index/resource_index/packages
+copying package.xml -> /home/dualipa/ros2_ws/install/robot1/share/robot1
+running install_egg_info
+Copying ../../build/robot1/robot1.egg-info to /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robot1_node script to /home/dualipa/ros2_ws/install/robot1/lib/robot1
+writing list of installed files to '/home/dualipa/ros2_ws/build/robot1/install.log'

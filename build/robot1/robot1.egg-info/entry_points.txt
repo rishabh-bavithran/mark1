@@ -1,0 +1,3 @@
+[console_scripts]
+robot1_node = robot1.robot1_node:main
+

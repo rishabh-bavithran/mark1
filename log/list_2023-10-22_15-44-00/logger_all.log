@@ -1,0 +1,56 @@
+[23.400s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/dualipa/ros2_ws']
+[23.401s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/dualipa/ros2_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff984e7880>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0xffff984cc610>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0xffff984cc610>>)
+[24.408s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[24.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[24.409s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[24.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[24.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[24.411s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dualipa/ros2_ws'
+[24.412s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[24.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'ignore'
+[24.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'ignore_ament_install'
+[24.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extensions ['colcon_pkg']
+[24.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'colcon_pkg'
+[24.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extensions ['colcon_meta']
+[24.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'colcon_meta'
+[24.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extensions ['ros']
+[24.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'ros'
+[24.633s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extensions ['cmake', 'python']
+[24.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'cmake'
+[24.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'python'
+[24.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extensions ['python_setup_py']
+[24.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws) by extension 'python_setup_py'
+[24.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[24.637s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/build) by extension 'ignore'
+[24.638s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/build) ignored
+[24.639s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[24.640s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/install) by extension 'ignore'
+[24.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/install) ignored
+[24.656s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[24.656s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/log) by extension 'ignore'
+[24.658s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/log) ignored
+[24.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[24.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'ignore'
+[24.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'ignore_ament_install'
+[24.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extensions ['colcon_pkg']
+[24.661s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'colcon_pkg'
+[24.662s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extensions ['colcon_meta']
+[24.663s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'colcon_meta'
+[24.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extensions ['ros']
+[24.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'ros'
+[24.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extensions ['cmake', 'python']
+[24.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'cmake'
+[24.666s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'python'
+[24.666s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extensions ['python_setup_py']
+[24.667s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src) by extension 'python_setup_py'
+[24.668s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extensions ['ignore', 'ignore_ament_install']
+[24.669s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extension 'ignore'
+[24.670s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extension 'ignore_ament_install'
+[24.670s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extensions ['colcon_pkg']
+[24.671s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extension 'colcon_pkg'
+[24.671s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extensions ['colcon_meta']
+[24.671s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extension 'colcon_meta'
+[24.672s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extensions ['ros']
+[24.672s] Level 1:colcon.colcon_core.package_identification:_identify(/home/dualipa/ros2_ws/src/robot1) by extension 'ros'
+[24.698s] DEBUG:colcon.colcon_core.package_identification:Package '/home/dualipa/ros2_ws/src/robot1' with type 'ros.ament_python' and name 'robot1'
+[24.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
