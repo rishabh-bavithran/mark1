@@ -1,0 +1,116 @@
+[0.000000] (-) TimerEvent: {}
+[0.001442] (robot1) JobQueued: {'identifier': 'robot1', 'dependencies': OrderedDict()}
+[0.002027] (robot1) JobStarted: {'identifier': 'robot1'}
+[0.098818] (-) TimerEvent: {}
+[0.199985] (-) TimerEvent: {}
+[0.301475] (-) TimerEvent: {}
+[0.402201] (-) TimerEvent: {}
+[0.503084] (-) TimerEvent: {}
+[0.603989] (-) TimerEvent: {}
+[0.704812] (-) TimerEvent: {}
+[0.805504] (-) TimerEvent: {}
+[0.906187] (-) TimerEvent: {}
+[1.006811] (-) TimerEvent: {}
+[1.107652] (-) TimerEvent: {}
+[1.208314] (-) TimerEvent: {}
+[1.309257] (-) TimerEvent: {}
+[1.409942] (-) TimerEvent: {}
+[1.510717] (-) TimerEvent: {}
+[1.611551] (-) TimerEvent: {}
+[1.712771] (-) TimerEvent: {}
+[1.813939] (-) TimerEvent: {}
+[1.914818] (-) TimerEvent: {}
+[2.016086] (-) TimerEvent: {}
+[2.116906] (-) TimerEvent: {}
+[2.217573] (-) TimerEvent: {}
+[2.318278] (-) TimerEvent: {}
+[2.418984] (-) TimerEvent: {}
+[2.519659] (-) TimerEvent: {}
+[2.620466] (-) TimerEvent: {}
+[2.721072] (-) TimerEvent: {}
+[2.821695] (-) TimerEvent: {}
+[2.922347] (-) TimerEvent: {}
+[3.022988] (-) TimerEvent: {}
+[3.123714] (-) TimerEvent: {}
+[3.224366] (-) TimerEvent: {}
+[3.325285] (-) TimerEvent: {}
+[3.425970] (-) TimerEvent: {}
+[3.526816] (-) TimerEvent: {}
+[3.628203] (-) TimerEvent: {}
+[3.630264] (robot1) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/dualipa/ros2_ws/build/robot1/build'], 'cwd': '/home/dualipa/ros2_ws/build/robot1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dualipa', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dualipa', 'OLDPWD': '/home/dualipa', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1720', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dualipa/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dualipa', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dualipa', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/dualipa:@/tmp/.ICE-unix/1678,unix/dualipa:/tmp/.ICE-unix/1678', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ed881f7e_bae6_49b8_a5e3_e2e2674af7de', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.101AD2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.166', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dualipa/ros2_ws/install/robot1:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dualipa/ros2_ws/build/robot1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dualipa/ros2_ws/build/robot1/prefix_override:/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages:/home/dualipa/ros2_ws/build/robot1:/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.728385] (-) TimerEvent: {}
+[3.829357] (-) TimerEvent: {}
+[3.929984] (-) TimerEvent: {}
+[4.030602] (-) TimerEvent: {}
+[4.131212] (-) TimerEvent: {}
+[4.231861] (-) TimerEvent: {}
+[4.332464] (-) TimerEvent: {}
+[4.433253] (-) TimerEvent: {}
+[4.533880] (-) TimerEvent: {}
+[4.634485] (-) TimerEvent: {}
+[4.735115] (-) TimerEvent: {}
+[4.835827] (-) TimerEvent: {}
+[4.870902] (robot1) StdoutLine: {'line': b'running develop\n'}
+[4.935981] (-) TimerEvent: {}
+[5.036611] (-) TimerEvent: {}
+[5.137272] (-) TimerEvent: {}
+[5.238077] (-) TimerEvent: {}
+[5.338734] (-) TimerEvent: {}
+[5.439356] (-) TimerEvent: {}
+[5.539980] (-) TimerEvent: {}
+[5.640634] (-) TimerEvent: {}
+[5.643508] (robot1) StdoutLine: {'line': b'Removing /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1.egg-link (link to .)\n'}
+[5.740966] (-) TimerEvent: {}
+[5.799548] (robot1) CommandEnded: {'returncode': 0}
+[5.803027] (robot1) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robot1', 'build', '--build-base', '/home/dualipa/ros2_ws/build/robot1/build', 'install', '--record', '/home/dualipa/ros2_ws/build/robot1/install.log', '--single-version-externally-managed'], 'cwd': '/home/dualipa/ros2_ws/src/robot1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dualipa', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dualipa', 'OLDPWD': '/home/dualipa', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1720', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dualipa/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dualipa', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dualipa', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/dualipa:@/tmp/.ICE-unix/1678,unix/dualipa:/tmp/.ICE-unix/1678', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ed881f7e_bae6_49b8_a5e3_e2e2674af7de', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.101AD2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.166', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dualipa/ros2_ws/install/robot1:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dualipa/ros2_ws/build/robot1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dualipa/ros2_ws/build/robot1/prefix_override:/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages:/home/dualipa/ros2_ws/build/robot1:/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[5.841121] (-) TimerEvent: {}
+[5.941798] (-) TimerEvent: {}
+[6.042602] (-) TimerEvent: {}
+[6.143795] (-) TimerEvent: {}
+[6.244494] (-) TimerEvent: {}
+[6.345212] (-) TimerEvent: {}
+[6.445945] (-) TimerEvent: {}
+[6.546604] (-) TimerEvent: {}
+[6.647452] (-) TimerEvent: {}
+[6.748094] (-) TimerEvent: {}
+[6.848736] (-) TimerEvent: {}
+[6.949372] (-) TimerEvent: {}
+[6.961253] (robot1) StdoutLine: {'line': b'running egg_info\n'}
+[6.964270] (robot1) StdoutLine: {'line': b'writing ../../build/robot1/robot1.egg-info/PKG-INFO\n'}
+[6.965459] (robot1) StdoutLine: {'line': b'writing dependency_links to ../../build/robot1/robot1.egg-info/dependency_links.txt\n'}
+[6.966362] (robot1) StdoutLine: {'line': b'writing entry points to ../../build/robot1/robot1.egg-info/entry_points.txt\n'}
+[6.967221] (robot1) StdoutLine: {'line': b'writing requirements to ../../build/robot1/robot1.egg-info/requires.txt\n'}
+[6.968123] (robot1) StdoutLine: {'line': b'writing top-level names to ../../build/robot1/robot1.egg-info/top_level.txt\n'}
+[6.977766] (robot1) StdoutLine: {'line': b"reading manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'\n"}
+[6.983045] (robot1) StdoutLine: {'line': b"writing manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'\n"}
+[6.983883] (robot1) StdoutLine: {'line': b'running build\n'}
+[6.984299] (robot1) StdoutLine: {'line': b'running build_py\n'}
+[6.984802] (robot1) StdoutLine: {'line': b'copying robot1/robot1_node.py -> /home/dualipa/ros2_ws/build/robot1/build/lib/robot1\n'}
+[6.986892] (robot1) StdoutLine: {'line': b'copying robot1/servotestspeeddir.py -> /home/dualipa/ros2_ws/build/robot1/build/lib/robot1\n'}
+[6.988925] (robot1) StdoutLine: {'line': b'running install\n'}
+[6.990261] (robot1) StdoutLine: {'line': b'running install_lib\n'}
+[6.993582] (robot1) StdoutLine: {'line': b'creating /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1\n'}
+[6.994232] (robot1) StdoutLine: {'line': b'copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/robot1_node.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1\n'}
+[6.995054] (robot1) StdoutLine: {'line': b'copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/ledtest.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1\n'}
+[6.997001] (robot1) StdoutLine: {'line': b'copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/servotest.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1\n'}
+[6.998483] (robot1) StdoutLine: {'line': b'copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/__init__.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1\n'}
+[6.999303] (robot1) StdoutLine: {'line': b'copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/servotestspeeddir.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1\n'}
+[7.001946] (robot1) StdoutLine: {'line': b'byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/robot1_node.py to robot1_node.cpython-310.pyc\n'}
+[7.005144] (robot1) StdoutLine: {'line': b'byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/ledtest.py to ledtest.cpython-310.pyc\n'}
+[7.006780] (robot1) StdoutLine: {'line': b'byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/servotest.py to servotest.cpython-310.pyc\n'}
+[7.008719] (robot1) StdoutLine: {'line': b'byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/__init__.py to __init__.cpython-310.pyc\n'}
+[7.009956] (robot1) StdoutLine: {'line': b'byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/servotestspeeddir.py to servotestspeeddir.cpython-310.pyc\n'}
+[7.011434] (robot1) StdoutLine: {'line': b'running install_data\n'}
+[7.014061] (robot1) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.020761] (robot1) StdoutLine: {'line': b'Copying ../../build/robot1/robot1.egg-info to /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1-0.0.0-py3.10.egg-info\n'}
+[7.027583] (robot1) StdoutLine: {'line': b'running install_scripts\n'}
+[7.049569] (-) TimerEvent: {}
+[7.108877] (robot1) StdoutLine: {'line': b'Installing robot1_node script to /home/dualipa/ros2_ws/install/robot1/lib/robot1\n'}
+[7.110870] (robot1) StdoutLine: {'line': b"writing list of installed files to '/home/dualipa/ros2_ws/build/robot1/install.log'\n"}
+[7.149921] (-) TimerEvent: {}
+[7.251038] (robot1) CommandEnded: {'returncode': 0}
+[7.252594] (-) TimerEvent: {}
+[7.353550] (-) TimerEvent: {}
+[7.454313] (-) TimerEvent: {}
+[7.506937] (robot1) JobEnded: {'identifier': 'robot1', 'rc': 0}
+[7.510409] (-) EventReactorShutdown: {}

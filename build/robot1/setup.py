@@ -1,1 +1,0 @@
-/home/dualipa/ros2_ws/src/robot1/setup.py
