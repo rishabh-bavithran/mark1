@@ -1,15 +1,33 @@
 #!/usr/bin/env python3
-
+import time
 import rclpy
 from rclpy.node import Node
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 led_pin = 24
+GPIO.setup(led_pin, GPIO.OUT)
+
 
 # Define the GPIO pin that you've connected the servo to
-servo_pin = 18
 
-GPIO.setup(led_pin, GPIO.OUT)
+#RIGHT SERVO
+servo_pin_right = 18
+GPIO.setup(servo_pin_right, GPIO.OUT)
+p = GPIO.PWM(servo_pin_right, 50)
+#p.start(10)
+
+#LEFT SERVO
+servo_pin_left = 12
+GPIO.setup(servo_pin_left, GPIO.OUT)
+q = GPIO.PWM(servo_pin_left, 50)
+#p.start(10)
+
+
+#DUTY CYCLES FOR MOTIONS
+halt_dc = 10
+forward_dc_rm = 8
+forward_dc_lm = 12
+
 
 from example_interfaces.msg import Int64
 from example_interfaces.msg import String
@@ -22,6 +40,7 @@ class Robot1Node(Node):
                                  self.led_control_callback, 10)
         self.create_subscription(String, "robot1_movement", 
                                  self.callback_robot1_movement,10)
+        
     
     #TESTING PURPOSES
     def led_control_callback(self, msg):
@@ -37,6 +56,8 @@ class Robot1Node(Node):
     def callback_robot1_movement(self,msg):
         robot_movement = msg.data 
         if robot_movement == "forward":
+            p.start(10)
+            q.start(10)
             self.forward_movement()
         elif robot_movement == "right":
             self.right_turn()
@@ -49,6 +70,8 @@ class Robot1Node(Node):
 
     def forward_movement(self):
         self.get_logger().info("Moving Forward")
+        p.ChangeDutyCycle(forward_dc_rm)
+        q.ChangeDutyCycle(forward_dc_lm)
         #Moving forward CODE 
 
     def right_turn(self):
@@ -65,6 +88,9 @@ class Robot1Node(Node):
 
     def halt_movement(self):
         self.get_logger().info("Halted Movement")
+        #p.ChangeDutyCycle(halt_dc)
+        p.stop()
+        q.stop()
         #HALTING CODE
     
 
@@ -78,3 +104,5 @@ def main(args=None):
 
 if __name__=="__main__":
     main()
+
+

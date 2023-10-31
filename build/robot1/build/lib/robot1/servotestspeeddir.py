@@ -16,6 +16,7 @@ pwm = GPIO.PWM(servo_pin, 50)
 # Start the PWM with a duty cycle of 0 (full anti-clockwise)
 pwm.start(0)
 
+
 while True:
     # Rotate the servo in one direction (e.g., clockwise)
     pwm.ChangeDutyCycle(7.5)  # Middle position (stop)

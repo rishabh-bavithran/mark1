@@ -13,7 +13,9 @@ robot1/__init__.py
 robot1/ledtest.py
 robot1/robot1_node.py
 robot1/servotest.py
+robot1/servotest2.py
 robot1/servotestspeeddir.py
+robot1/standardservo.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

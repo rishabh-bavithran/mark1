@@ -1,0 +1,24 @@
+[3.389s] Invoking command in '/home/dualipa/ros2_ws/src/robot1': PYTHONPATH=/home/dualipa/ros2_ws/build/robot1/prefix_override:/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot1 build --build-base /home/dualipa/ros2_ws/build/robot1/build install --record /home/dualipa/ros2_ws/build/robot1/install.log --single-version-externally-managed
+[4.549s] running egg_info
+[4.551s] writing ../../build/robot1/robot1.egg-info/PKG-INFO
+[4.552s] writing dependency_links to ../../build/robot1/robot1.egg-info/dependency_links.txt
+[4.553s] writing entry points to ../../build/robot1/robot1.egg-info/entry_points.txt
+[4.554s] writing requirements to ../../build/robot1/robot1.egg-info/requires.txt
+[4.554s] writing top-level names to ../../build/robot1/robot1.egg-info/top_level.txt
+[4.565s] reading manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+[4.569s] writing manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+[4.570s] running build
+[4.570s] running build_py
+[4.571s] copying robot1/robot1_node.py -> /home/dualipa/ros2_ws/build/robot1/build/lib/robot1
+[4.574s] running install
+[4.575s] running install_lib
+[4.578s] copying /home/dualipa/ros2_ws/build/robot1/build/lib/robot1/robot1_node.py -> /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1
+[4.582s] byte-compiling /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1/robot1_node.py to robot1_node.cpython-310.pyc
+[4.586s] running install_data
+[4.589s] running install_egg_info
+[4.595s] removing '/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1-0.0.0-py3.10.egg-info' (and everything under it)
+[4.597s] Copying ../../build/robot1/robot1.egg-info to /home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages/robot1-0.0.0-py3.10.egg-info
+[4.603s] running install_scripts
+[4.679s] Installing robot1_node script to /home/dualipa/ros2_ws/install/robot1/lib/robot1
+[4.681s] writing list of installed files to '/home/dualipa/ros2_ws/build/robot1/install.log'
+[4.811s] Invoked command in '/home/dualipa/ros2_ws/src/robot1' returned '0': PYTHONPATH=/home/dualipa/ros2_ws/build/robot1/prefix_override:/home/dualipa/ros2_ws/install/robot1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot1 build --build-base /home/dualipa/ros2_ws/build/robot1/build install --record /home/dualipa/ros2_ws/build/robot1/install.log --single-version-externally-managed
