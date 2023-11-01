@@ -21,12 +21,20 @@ servo_pin_left = 12
 GPIO.setup(servo_pin_left, GPIO.OUT)
 q = GPIO.PWM(servo_pin_left, 50)
 #p.start(10)
-
+p.start(10)
+q.start(10)
 
 #DUTY CYCLES FOR MOTIONS
-halt_dc = 10
+halt_dc = 0
 forward_dc_rm = 8
 forward_dc_lm = 12
+reverse_dc_rm = 12
+reverse_dc_lm = 8
+right_turn_dc_rm = 12
+right_turn_dc_lm = 12
+left_turn_dc_rm = 8
+left_turn_dc_lm = 8
+
 
 
 from example_interfaces.msg import Int64
@@ -56,8 +64,7 @@ class Robot1Node(Node):
     def callback_robot1_movement(self,msg):
         robot_movement = msg.data 
         if robot_movement == "forward":
-            p.start(10)
-            q.start(10)
+
             self.forward_movement()
         elif robot_movement == "right":
             self.right_turn()
@@ -76,21 +83,28 @@ class Robot1Node(Node):
 
     def right_turn(self):
         self.get_logger().info("Taking right turn")
+        p.ChangeDutyCycle(right_turn_dc_rm)
+        q.ChangeDutyCycle(right_turn_dc_lm)
         #Taking RIGHT Code
 
     def left_turn(self):
         self.get_logger().info("Taking left turn")
+        p.ChangeDutyCycle(left_turn_dc_rm)
+        q.ChangeDutyCycle(left_turn_dc_lm)
         #Taking LEFT TURN CODE
 
     def reverse_movement(self):
         self.get_logger().info("Moving Reverse")
+        p.ChangeDutyCycle(reverse_dc_rm)
+        q.ChangeDutyCycle(reverse_dc_lm)
         #TAKING REVERSE CODE
 
     def halt_movement(self):
         self.get_logger().info("Halted Movement")
-        #p.ChangeDutyCycle(halt_dc)
-        p.stop()
-        q.stop()
+        p.ChangeDutyCycle(halt_dc)
+        q.ChangeDutyCycle(halt_dc)
+        #p.stop()
+        #q.stop()
         #HALTING CODE
     
 

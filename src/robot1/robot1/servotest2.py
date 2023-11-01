@@ -17,8 +17,8 @@ while(counter< 12):
 
 
 p.stop()
-time.sleep(5)
-p.start(counter)
+time.sleep(2)
+p.start(8)
 counter = 8
 while(counter< 12):
     counter = counter + 0.1
