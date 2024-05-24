@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages",
+        "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages",
+        "/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages",
+        "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages",
+        "/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

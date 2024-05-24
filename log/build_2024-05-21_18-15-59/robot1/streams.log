@@ -1,0 +1,24 @@
+[3.734s] Invoking command in '/home/dualipa/mark1/src/robot1': PYTHONPATH=/home/dualipa/mark1/build/robot1/prefix_override:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot1 build --build-base /home/dualipa/mark1/build/robot1/build install --record /home/dualipa/mark1/build/robot1/install.log --single-version-externally-managed install_data
+[5.217s] running egg_info
+[5.221s] writing ../../build/robot1/robot1.egg-info/PKG-INFO
+[5.223s] writing dependency_links to ../../build/robot1/robot1.egg-info/dependency_links.txt
+[5.224s] writing entry points to ../../build/robot1/robot1.egg-info/entry_points.txt
+[5.225s] writing requirements to ../../build/robot1/robot1.egg-info/requires.txt
+[5.225s] writing top-level names to ../../build/robot1/robot1.egg-info/top_level.txt
+[5.235s] reading manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+[5.240s] writing manifest file '../../build/robot1/robot1.egg-info/SOURCES.txt'
+[5.240s] running build
+[5.241s] running build_py
+[5.242s] copying robot1/robot1_node.py -> /home/dualipa/mark1/build/robot1/build/lib/robot1
+[5.245s] running install
+[5.246s] running install_lib
+[5.250s] copying /home/dualipa/mark1/build/robot1/build/lib/robot1/robot1_node.py -> /home/dualipa/mark1/install/robot1/lib/python3.10/site-packages/robot1
+[5.254s] byte-compiling /home/dualipa/mark1/install/robot1/lib/python3.10/site-packages/robot1/robot1_node.py to robot1_node.cpython-310.pyc
+[5.259s] running install_data
+[5.260s] running install_egg_info
+[5.271s] removing '/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages/robot1-0.0.0-py3.10.egg-info' (and everything under it)
+[5.272s] Copying ../../build/robot1/robot1.egg-info to /home/dualipa/mark1/install/robot1/lib/python3.10/site-packages/robot1-0.0.0-py3.10.egg-info
+[5.280s] running install_scripts
+[5.369s] Installing robot1_node script to /home/dualipa/mark1/install/robot1/lib/robot1
+[5.371s] writing list of installed files to '/home/dualipa/mark1/build/robot1/install.log'
+[5.523s] Invoked command in '/home/dualipa/mark1/src/robot1' returned '0': PYTHONPATH=/home/dualipa/mark1/build/robot1/prefix_override:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot1 build --build-base /home/dualipa/mark1/build/robot1/build install --record /home/dualipa/mark1/build/robot1/install.log --single-version-externally-managed install_data

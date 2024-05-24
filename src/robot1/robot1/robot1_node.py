@@ -36,6 +36,7 @@ left_turn_dc_rm = 8
 left_turn_dc_lm = 8 
 forward_test_rm = 0 
 forward_test_lm = 0
+last_state = None
 
 
 from example_interfaces.msg import Int64
@@ -55,14 +56,20 @@ class Robot1Node(Node):
     def led_control_callback(self, msg):
         #led_state = Int64()
         led_state = msg.data
+
         # if led_state == 1:
         #     self.get_logger().info(str(led_state))
         #     GPIO.output(led_pin, GPIO.HIGH)
         # elif led_state == 0:
         #     GPIO.output(led_pin, GPIO.LOW)
         #     self.get_logger().info(str(led_state))
-        forward_test_rm = forward_dc_rm + led_state
-        forward_test_lm = forward_dc_lm - led_state
+        if last_state!= led_state:
+            last_state = led_state
+            forward_test_rm = forward_dc_rm + led_state
+            forward_test_lm = forward_dc_lm - led_state
+            self.get_logger().info("right Motor Duty Cycle" + str(forward_test_rm))
+            self.get_logger().info("left motor duty cycle " + str(forward_test_lm))
+
         
 
 
