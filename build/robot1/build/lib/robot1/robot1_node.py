@@ -34,22 +34,24 @@ right_turn_dc_rm = 12
 right_turn_dc_lm = 12
 left_turn_dc_rm = 8
 left_turn_dc_lm = 8 
-forward_test_rm = 0 
-forward_test_lm = 0
-last_state = None
 
 
-from example_interfaces.msg import Int64
+from example_interfaces.msg import Float64
 from example_interfaces.msg import String
 class Robot1Node(Node):
     
     def __init__(self):
         super().__init__("robot1_node")
         self.get_logger().info("robot1 node has started")
-        self.create_subscription(Int64, "led_control", 
+        self.create_subscription(Float64, "led_control", 
                                  self.led_control_callback, 10)
         self.create_subscription(String, "robot1_movement", 
                                  self.callback_robot1_movement,10)
+        self.last_state = None 
+        self.forward_test_rm = 0
+        self.forward_test_lm = 0
+
+
         
     
     #TESTING PURPOSES
@@ -63,12 +65,12 @@ class Robot1Node(Node):
         # elif led_state == 0:
         #     GPIO.output(led_pin, GPIO.LOW)
         #     self.get_logger().info(str(led_state))
-        if last_state!= led_state:
-            last_state = led_state
-            forward_test_rm = forward_dc_rm + led_state
-            forward_test_lm = forward_dc_lm - led_state
-            self.get_logger().info("right Motor Duty Cycle" + str(forward_test_rm))
-            self.get_logger().info("left motor duty cycle " + str(forward_test_lm))
+        if self.last_state!= led_state:
+            self.last_state = led_state
+            self.forward_test_rm = forward_dc_rm + led_state
+            self.forward_test_lm = forward_dc_lm - led_state
+            self.get_logger().info("right Motor Duty Cycle" + str(self.forward_test_rm))
+            self.get_logger().info("left motor duty cycle " + str(self.forward_test_lm))
 
         
 
@@ -89,8 +91,8 @@ class Robot1Node(Node):
 
     def forward_movement(self):
         self.get_logger().info("Moving Forward")
-        p.ChangeDutyCycle(forward_test_rm)
-        q.ChangeDutyCycle(forward_test_lm)
+        p.ChangeDutyCycle(self.forward_test_rm)
+        q.ChangeDutyCycle(self.forward_test_lm)
         #Moving forward CODE 
 
     def right_turn(self):
