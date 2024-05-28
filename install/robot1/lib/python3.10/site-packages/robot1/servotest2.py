@@ -2,31 +2,41 @@ import RPi.GPIO as GPIO
 import time
 
 
-servo_pin = 18
+servo_pin_1 = 18
+servo_pin_2 = 12
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(servo_pin, GPIO.OUT)
-p = GPIO.PWM(servo_pin, 50)
-p.start(10)
+GPIO.setup(servo_pin_1, GPIO.OUT)
+GPIO.setup(servo_pin_2, GPIO.OUT)
 
-counter = 8
-while(counter< 12):
-    counter = counter + 0.1
+p = GPIO.PWM(servo_pin_1, 50)
+q = GPIO.PWM(servo_pin_2, 50)
+
+p.start(0)
+q.start(0)
+
+# counter = 0
+# while(counter< 100):
+#     counter = counter + 1
+#     print(counter)
+#     p.ChangeDutyCycle(counter)
+#     q.ChangeDutyCycle(counter)
+#     time.sleep(0.1)
+
+
+# p.ChangeDutyCycle(7.5)
+# q.ChangeDutyCycle(7.5)
+# time.sleep(200)
+
+counter = 9
+while(counter> 6):
+    counter = counter - 0.1
     print(counter)
     p.ChangeDutyCycle(counter)
-    time.sleep(0.5)
+    q.ChangeDutyCycle(counter)
+    time.sleep(1)
 
-
-p.ChangeDutyCycle(0)
-time.sleep(5)
-p.start(counter)
-counter = 8
-while(counter< 12):
-    counter = counter + 0.1
-    print(counter)
-    p.ChangeDutyCycle(counter)
-    time.sleep(0.5)
-
-
+# p.ChangeDutyCycle(0)
+# q.ChangeDutyCycle(0)
     
 
 """

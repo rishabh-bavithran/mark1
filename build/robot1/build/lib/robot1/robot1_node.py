@@ -26,8 +26,8 @@ q.start(10)
 
 #DUTY CYCLES FOR MOTIONS
 halt_dc = 0
-forward_dc_rm = 8
-forward_dc_lm = 12
+forward_dc_rm = 6
+forward_dc_lm = 9
 reverse_dc_rm = 12
 reverse_dc_lm = 8
 right_turn_dc_rm = 12
@@ -91,8 +91,8 @@ class Robot1Node(Node):
 
     def forward_movement(self):
         self.get_logger().info("Moving Forward")
-        p.ChangeDutyCycle(self.forward_test_rm)
-        q.ChangeDutyCycle(self.forward_test_lm)
+        p.ChangeDutyCycle(forward_dc_rm)
+        q.ChangeDutyCycle(forward_dc_lm)
         #Moving forward CODE 
 
     def right_turn(self):

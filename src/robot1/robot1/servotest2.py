@@ -14,26 +14,26 @@ q = GPIO.PWM(servo_pin_2, 50)
 p.start(0)
 q.start(0)
 
-counter = 0
-while(counter< 100):
-    counter = counter + 1
-    print(counter)
-    p.ChangeDutyCycle(counter)
-    q.ChangeDutyCycle(counter)
-    time.sleep(0.1)
-
-
-p.ChangeDutyCycle(7.5)
-q.ChangeDutyCycle(7.5)
-time.sleep(200)
-
-# counter = 12
-# while(counter> 8):
-#     counter = counter - 0.1
+# counter = 0
+# while(counter< 100):
+#     counter = counter + 1
 #     print(counter)
 #     p.ChangeDutyCycle(counter)
 #     q.ChangeDutyCycle(counter)
-#     time.sleep(1)
+#     time.sleep(0.1)
+
+
+# p.ChangeDutyCycle(7.5)
+# q.ChangeDutyCycle(7.5)
+# time.sleep(200)
+
+counter = 9
+while(counter> 6):
+    counter = counter - 0.1
+    print(counter)
+    p.ChangeDutyCycle(counter)
+    q.ChangeDutyCycle(counter)
+    time.sleep(1)
 
 # p.ChangeDutyCycle(0)
 # q.ChangeDutyCycle(0)
