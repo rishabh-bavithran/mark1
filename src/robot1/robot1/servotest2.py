@@ -23,17 +23,17 @@ q.start(0)
 #     time.sleep(0.1)
 
 
-# p.ChangeDutyCycle(7.5)
-# q.ChangeDutyCycle(7.5)
-# time.sleep(200)
+p.ChangeDutyCycle(7.5)
+q.ChangeDutyCycle(7.5)
+time.sleep(200)
 
-counter = 9
-while(counter> 6):
-    counter = counter - 0.1
-    print(counter)
-    p.ChangeDutyCycle(counter)
-    q.ChangeDutyCycle(counter)
-    time.sleep(1)
+#counter = 9
+#while(counter> 6):
+#    counter = counter - 0.1
+#    print(counter)
+#    p.ChangeDutyCycle(counter)
+#    q.ChangeDutyCycle(counter)
+#    time.sleep(1)
 
 # p.ChangeDutyCycle(0)
 # q.ChangeDutyCycle(0)
